@@ -32,6 +32,10 @@ app.use(express.json())
 app.use("/api/auth", authRoutes);
 app.use("/api/contacts", contactsRoutes)
 
+app.get("/", (req,res) => {
+    res.send("Server is running");
+})
+
 const server = app.listen(port, () => {
     console.log(`server is running http://localhost:${port}`)
 })
