@@ -18,7 +18,7 @@ const databaseURL = process.env.DATABASE_URL;
 
 app.use(
     cors({
-        origin: "*",
+        origin: "https://lumino-chat-manish-iitg-client.vercel.app",
         methods: ["GET","POST","PUT","PATCH","DELETE"],
         credentials:true,
     })
